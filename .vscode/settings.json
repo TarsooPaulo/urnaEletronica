@@ -1,0 +1,13 @@
+{
+  "editor.codeActionsOnSave": {
+	    "quickfix.biome": "explicit",
+        "source.organizeImports.biome": "explicit",
+    },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+  "[javascript]": {
+	  "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "liveServer.settings.port": 5501
+}
