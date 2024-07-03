@@ -1,5 +1,5 @@
+import { urna } from '..';
 import { votoNulo } from '../funcoes/candidatos';
-import { urna } from '../main';
 import { bloqueiaTodosBotoes } from './bloqueiaTodosBotoes';
 
 const infosTelas = document.querySelector('.candidato-info');

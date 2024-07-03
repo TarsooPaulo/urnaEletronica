@@ -1,4 +1,4 @@
-import { urna } from '../main';
+import { urna } from '..';
 import { capturaConfirma } from './confirma';
 import { cliqueDigito, tiraDigitosTela } from './digitos';
 
@@ -22,7 +22,7 @@ export const capturaBranco = () => {
 export const bloqueiaBranco = () => {
   cliqueBranco;
   document.removeEventListener('click', cliqueBranco);
-}
+};
 export const bloqueiaDigito = () => {
   cliqueDigito;
   document.removeEventListener('click', cliqueDigito);

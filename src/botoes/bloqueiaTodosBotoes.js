@@ -1,4 +1,4 @@
-import { urna } from '../main';
+import { urna } from '..';
 import { bloqueiaBranco } from './branco';
 import { bloqueiaConfirma } from './confirma';
 import { bloqueiaCorrige } from './corrige';

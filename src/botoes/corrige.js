@@ -1,5 +1,5 @@
+import { urna } from '..';
 import { zeraVotos } from '../funcoes/votos';
-import { urna } from '../main';
 const votoNulo = document.querySelector('.voto-nulo');
 const digitos = document.querySelectorAll('.digitos-tela');
 const candidatoInfo = document.querySelector('.candidato-info');

@@ -1,3 +1,3 @@
 // entrypoint
-import urnaEletronica from './src/main';
+import urnaEletronica from './src/index.js';
 new urnaEletronica();
