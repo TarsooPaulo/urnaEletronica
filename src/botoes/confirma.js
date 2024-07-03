@@ -10,7 +10,7 @@ const cliqueConfirma = (event) => {
   const el = event.target;
   if (el.classList.contains('confirma')) {
     const somNumeros = new Audio();
-    somNumeros.src = '../public/audios/confirma.mp3';
+    somNumeros.src = '../../audios/confirma.mp3';
     somNumeros.play();
     confirmaVoto();
   }

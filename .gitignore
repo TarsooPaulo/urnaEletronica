@@ -3,3 +3,4 @@ node_modules
 biome.json
 tsconfig.json
 webpack.config.js
+.editorconfig

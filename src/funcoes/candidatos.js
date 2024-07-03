@@ -23,37 +23,37 @@ export const candidatos = [
   {
     name: 'Sakuta',
     number: 56666,
-    image: '../src/img/Sakuta.jpg',
+    image: './img/Sakuta.jpg',
     partido: 'Bunny girl',
   },
   {
     name: 'Makinohara',
     number: 56023,
-    image: '../src/img/Makinohara.jpeg',
+    image: './img/Makinohara.jpeg',
     partido: 'Bunny girl',
   },
   {
     name: 'Naruto Uzumaki',
     number: 12796,
-    image: '../src/img/Naruto.jpg',
+    image: './img/Naruto.jpg',
     partido: 'Naruto',
   },
   {
     name: 'Sasuke Uchiha',
     number: 12751,
-    image: '../src/img/Sasuke.jpg',
+    image: './img/Sasuke.jpg',
     partido: 'Naruto',
   },
   {
     name: 'Satoru Gojo',
     number: 90152,
-    image: '../src/img/Satoru Gojo.jpg',
+    image: './img/Satoru Gojo.jpg',
     partido: 'Jujutsu Kaisen',
   },
   {
     name: 'Yuji Itadori',
     number: 90034,
-    image: '../src/img/Yuji Itadori.png',
+    image: '.img/Yuji Itadori.png',
     partido: 'Jujutsu Kaisen',
   },
 ];

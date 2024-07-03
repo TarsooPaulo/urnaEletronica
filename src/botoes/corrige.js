@@ -12,7 +12,7 @@ const cliqueCorrige = (event) => {
   const el = event.target;
   if (el.classList.contains('corrige')) {
     const somNumeros = new Audio();
-    somNumeros.src = '../public/audios/corrige.mp3';
+    somNumeros.src = '../../audios/corrige.mp3';
     somNumeros.play();
     corrigeVoto();
   }
