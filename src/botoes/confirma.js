@@ -9,9 +9,9 @@ const votoBranco = document.getElementById('branco');
 const cliqueConfirma = (event) => {
   const el = event.target;
   if (el.classList.contains('confirma')) {
-    const somNumeros = new Audio();
-    somNumeros.src = '../../audios/confirma.mp3';
-    somNumeros.play();
+    const somConfirma = new Audio();
+    somConfirma.src = '../../audios/confirma.mp3';
+    somConfirma.play();
     confirmaVoto();
   }
 };

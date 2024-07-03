@@ -11,9 +11,9 @@ const fim = document.querySelector('.fim');
 const cliqueCorrige = (event) => {
   const el = event.target;
   if (el.classList.contains('corrige')) {
-    const somNumeros = new Audio();
-    somNumeros.src = '../../audios/corrige.mp3';
-    somNumeros.play();
+    const somCorrige = new Audio();
+    somCorrige.src = '../../audios/corrige.mp3';
+    somCorrige.play();
     corrigeVoto();
   }
 };
