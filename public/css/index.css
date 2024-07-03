@@ -36,19 +36,20 @@ body {
   align-items: center;
   height: 100vh;
   flex-direction: column;
+  min-width: 850px;
+  min-height: 500px;
 }
 
 .urna {
   border-radius: 5px;
   background: rgb(196, 196, 196);
-  min-height: 80vh;
-  max-height: 100%;
-  /* max-width: 100%; */
-  /* width: 1080px; */
+  margin: 0 auto;
+  min-height: 50vh;
   width: 90vw;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  min-width: 850px;
 }
 
 .tela-urna {
