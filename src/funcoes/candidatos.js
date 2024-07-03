@@ -17,7 +17,7 @@ export const candidatos = [
   {
     name: 'Vegeta',
     number: 55123,
-    image: '../src/img/Vegeta.jpeg',
+    image: './img/Vegeta.jpeg',
     partido: 'Dragon Ball',
   },
   {

@@ -7,7 +7,7 @@ export const cliqueDigito = (event) => {
   const el = event.target;
   if (el.classList.contains('numeros')) {
     const somNumeros = new Audio();
-    somNumeros.src = '../public/audios/numeros.mp3';
+    somNumeros.src = '../../audios/numeros.mp3';
     somNumeros.play();
     adicionaTela(el);
   }
