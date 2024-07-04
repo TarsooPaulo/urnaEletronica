@@ -1,26 +1,50 @@
-<p>
-  🇬🇧 - Tired of tweaking your web development environment for every project? With this repository you have linter (BiomeJS) and prettier configured to use in your projects as you wish, in addition to being prepared to be used with TypeScript, making code organization easier. Don't worry because the code will be transpiled, just use the command below to install the packages and enjoy! (Make sure you have the editorconfig, biomejs and prettier extensions properly installed and configured in your environment)
-
-🇧🇷 - Cansado de ajustar seu ambiente de desenvolvimento Web a cada projeto? com esse repositório você tem linter (BiomeJS) e prettier configurados para usar em seus projetos como desejar além dele estar preparado para ser utlizado com TypeScript facilitando a organização do código. Não se preocupe pois o código será transpilado, apenas utilize o comando abaixo para instalar os pacotes e aproveite! (Certifique-se de ter as extensões editorconfig, biomejs e prettier devidamente instaladas e configuradas em seu ambiente)
-
-</p>
-
-<pre>npm i -D</pre>
+<h2 align="center">🇬🇧 Brazilian Electronic Ballot Box - 🇧🇷 Urna Eletrônica Brasileira</h2>
 
 <p>
-    🇬🇧 - After the packages are installed, use the command below in your terminal to transpile your TypeScript
+  🇬🇧 - a Brazilian Electronic Ballot Box whose protagonis... I mean candidates, are characters from Japanese Cartoons
 
-🇧🇷 - Após os pacotes estarem instalados, utilize o comando abaixo em seu terminal para transpilar seu TypeScript
-
+  🇧🇷 - uma Urna Elerônica brasileira que tem como protagonis... quero dizer candidatos personagens de Desenhos Animados Japoneses
 </p>
 
-<pre>npm run dev</pre>
+<h2 align="center">🇬🇧 Available candidates
+ - 🇧🇷 Candidatos disponíveis</h2>
+ 
+<div>
+  <img src="public/img/Son Goku.png" width="100px" height="100px">
+  <p>Son Goku - Dragon Ball = 55555</p>
+</div>
 
-<p>
-    🇬🇧 - After completing your project, use the command below in your terminal, in addition to transpiling your TypeScript, it will optimize it for the production environment
+<div>
+  <img src="public/img/Vegeta.jpeg" width="100px" height="100px">
+  <p>Vegeta - Dragon Ball = 55123</p>
+</div>
 
-🇧🇷 - Após a finalização, utilize o comando abaixo em seu terminal para além de transpilar seu TypeScript ele o otimizará para o ambiente de produção
+<div>
+  <img src="public/img/Sakuta.jpg" width="100px" height="100px">
+  <p>Sakuta - Bunny Girl = 56666</p>
+</div>
 
-</p>
+<div>
+  <img src="public/img/Makinohara.jpeg" width="100px" height="100px">
+  <p>Makinohara - Bunny Girl = 56023</p>
+</div>
 
-<pre>npm run build</pre>
+<div>
+  <img src="public/img/Naruto.jpg" width="100px" height="100px">
+  <p>Naruto Uzumaki - Naruto = 12796</p>
+</div>
+
+<div>
+  <img src="public/img/Sasuke.jpg" width="100px" height="100px">
+  <p>Sasuke Uchiha - Naruto = 12751</p>
+</div>
+
+<div>
+  <img src="public/img/Satoru Gojo.jpg" width="100px" height="100px">
+  <p>Satoru Gojo - Jujutsu Kaisen = 90152</p>
+</div>
+
+<div>
+  <img src="public/img/Yuji Itadori.png" width="100px" height="100px">
+  <p>Yuji Itadori - Jujutsu Kaisen = 90034</p>
+</div>
