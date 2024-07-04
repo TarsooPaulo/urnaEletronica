@@ -3,7 +3,7 @@
 <p>
   🇬🇧 - a Brazilian Electronic Ballot Box whose protagonis... I mean candidates, are characters from Japanese Cartoons
 
-  🇧🇷 - uma Urna Elerônica brasileira que tem como protagonis... quero dizer candidatos personagens de Desenhos Animados Japoneses
+  🇧🇷 - uma Urna Eletrônica brasileira que tem como protagonis... quero dizer candidatos personagens de Desenhos Animados Japoneses
 </p>
 
 <h2 align="center">🇬🇧 Available candidates
