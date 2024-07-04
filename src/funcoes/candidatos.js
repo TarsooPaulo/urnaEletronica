@@ -53,7 +53,7 @@ export const candidatos = [
   {
     name: 'Yuji Itadori',
     number: 90034,
-    image: '.img/Yuji Itadori.png',
+    image: './img/Yuji Itadori.png',
     partido: 'Jujutsu Kaisen',
   },
 ];
