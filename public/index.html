@@ -1,92 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Urna Eletrônica</title>
-  <link rel="stylesheet" href="./css/index.css">
+  <title>Urna Eletrônica - Justiça Eleitoral</title>
   <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
-  <link rel="apple-touch-icon" sizes="57x57" href="./favicons/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="./favicons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="./favicons/apple-touch-icon-76x76.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="./favicons/apple-touch-icon-96x96.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="./favicons/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="./favicons/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="./favicons/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="./favicons/apple-touch-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon-180x180.png">
   <link rel="icon" type="image/png" sizes="192x192" href="./favicons/android-icon-192x192.png">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#3a3d3a">
+  <!-- Modern clean typography for institutional reading and LCD display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
 
-  <div class="urna">
-    <div class="tela-urna">
-      <div class="digitos-tela primeiro-digito pisca"></div>
-      <div class="digitos-tela"></div>
-      <div class="digitos-tela"></div>
-      <div class="digitos-tela"></div>
-      <div class="digitos-tela"></div>
+  <div class="urna-wrapper">
 
-      <div id="branco" class="aparece-branco hidden pisca">
-        <p class="voto-branco-texto">VOTO BRANCO</p>
-      </div>
-      <div class="voto-nulo pisca">
-        <p class="voto-nulo-texto">VOTO NULO</p>
-      </div>
-      <div class="fim hidden pisca">
-        <p class="fim-texto">FIM</p>
-      </div>
+    <!-- Physical Ballot Box Outer Case -->
+    <div class="urna">
 
-      <div class="candidato-info">
-        <div class="campo-foto">
-          <img class="foto">
+      <!-- Top Brass Emblem and Institutional Header -->
+      <div class="urna-header">
+        <div class="brasao-container">
+          <!-- Highly polished, official style vector representation of the Coat of Arms of Brazil -->
+          <svg class="brasao-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="45" stroke="#E5C158" stroke-width="3" />
+            <circle cx="50" cy="50" r="39" stroke="#113F15" stroke-width="1.5" />
+            <!-- Star background -->
+            <path d="M50 12 L61 35 L86 35 L66 49 L76 73 L50 58 L24 73 L34 49 L14 35 L39 35 Z" fill="#1E5C22" stroke="#E5C158" stroke-width="2" />
+            <!-- Inner blue circle and Southern Cross pattern -->
+            <circle cx="50" cy="46" r="14" fill="#0D2E5C" stroke="#E5C158" stroke-width="1.5" />
+            <!-- Star points inside blue circle -->
+            <circle cx="50" cy="40" r="1.5" fill="#FFFFFF" />
+            <circle cx="44" cy="45" r="1.5" fill="#FFFFFF" />
+            <circle cx="56" cy="45" r="1.5" fill="#FFFFFF" />
+            <circle cx="50" cy="51" r="1.5" fill="#FFFFFF" />
+            <circle cx="53" cy="48" r="1.0" fill="#FFFFFF" />
+            <!-- Ribbon -->
+            <path d="M30 70 Q50 78 70 70" stroke="#E5C158" stroke-width="3" fill="none" />
+            <path d="M32 70 Q50 78 68 70" stroke="#0D2E5C" stroke-width="1.5" fill="none" />
+          </svg>
         </div>
-        <div class="nome-partido">
-          <p class="nome"></p>
-          <p class="partido"></p>
+        <div class="header-text-group">
+          <span class="justica-eleitoral">JUSTIÇA ELEITORAL</span>
+          <span class="urna-modelo">URNA ELETRÔNICA UE2026</span>
         </div>
       </div>
+
+      <!-- Main Columns: Screen on Left, Teclado on Right -->
+      <div class="urna-body">
+
+        <!-- Left Side: Screen Assembly with bezel and green-tinted paper-white LCD display -->
+        <div class="screen-assembly">
+          <div class="tela-urna">
+
+            <!-- Standard screen layout when voting -->
+            <div class="screen-content-wrapper">
+
+              <!-- Screen Header (Cargo name & Context) -->
+              <div class="screen-header">
+                <span class="seu-voto-label">SEU VOTO VAI PARA</span>
+                <h2 class="cargo-title">DEPUTADO ESTADUAL</h2>
+              </div>
+
+              <!-- Main Panel: Displays digits, names, party, and photo -->
+              <div class="screen-main-panel">
+
+                <!-- Details and Inputs on the left of screen -->
+                <div class="panel-left">
+
+                  <!-- Digits Container (Matches JS query selector targets) -->
+                  <div class="number-input-section">
+                    <span class="numero-text-label">Número:</span>
+                    <div class="digitos-container">
+                      <div class="digitos-tela primeiro-digito pisca"></div>
+                      <div class="digitos-tela"></div>
+                      <div class="digitos-tela"></div>
+                      <div class="digitos-tela"></div>
+                      <div class="digitos-tela"></div>
+                    </div>
+                  </div>
+
+                  <!-- Candidate Info (Injected dynamically by JS) -->
+                  <div class="candidato-info">
+                    <div class="candidate-text-details">
+                      <p class="nome-p"><span class="nome"></span></p>
+                      <p class="partido-p"><span class="partido"></span></p>
+                    </div>
+                    <div class="campo-foto">
+                      <img class="foto" alt="Foto do Candidato">
+                    </div>
+                  </div>
+
+                  <!-- Overlay states (White / Nulo) -->
+                  <div id="branco" class="aparece-branco hidden pisca">
+                    <p class="voto-branco-texto">VOTO EM BRANCO</p>
+                  </div>
+
+                  <div class="voto-nulo pisca">
+                    <p class="voto-nulo-texto">VOTO NULO</p>
+                    <span class="voto-nulo-subtext">NÚMERO INEXISTENTE</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!-- Screen Footer: Instructions block with high-contrast keys badges -->
+              <div class="screen-footer">
+                <div class="footer-divider"></div>
+                <div class="instructions-box">
+                  <p class="inst-row">Aperte a tecla:</p>
+                  <p class="inst-row key-line"><span class="key-badge green">VERDE</span> para <strong>CONFIRMAR</strong> este voto</p>
+                  <p class="inst-row key-line"><span class="key-badge orange">LARANJA</span> para <strong>CORRIGIR</strong> (reiniciar) este voto</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- FIM Screen Overlay (Injected on confirmation) -->
+            <div class="fim hidden pisca">
+              <p class="fim-texto">FIM</p>
+              <p class="fim-subtext">VOTO GRAVADO</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Side: Tactile Numeric and Action Keypad Assembly -->
+        <div class="keyboard-assembly">
+          <div class="fundo-urna">
+
+            <div class="keyboard-grid">
+
+              <!-- Row 1 -->
+              <div class="linha-numeros">
+                <button type="button" class="numeros" data-key="1">
+                  1
+                  <span class="braille-dot" aria-hidden="true">⠂</span>
+                </button>
+                <button type="button" class="numeros" data-key="2">
+                  2
+                  <span class="braille-dot" aria-hidden="true">⠆</span>
+                </button>
+                <button type="button" class="numeros" data-key="3">
+                  3
+                  <span class="braille-dot" aria-hidden="true">⠒</span>
+                </button>
+              </div>
+
+              <!-- Row 2 -->
+              <div class="linha-numeros">
+                <button type="button" class="numeros" data-key="4">
+                  4
+                  <span class="braille-dot" aria-hidden="true">⠲</span>
+                </button>
+                <button type="button" class="numeros" data-key="5">
+                  5
+                  <span class="braille-dot" aria-hidden="true">⠢</span>
+                </button>
+                <button type="button" class="numeros" data-key="6">
+                  6
+                  <span class="braille-dot" aria-hidden="true">⠖</span>
+                </button>
+              </div>
+
+              <!-- Row 3 -->
+              <div class="linha-numeros">
+                <button type="button" class="numeros" data-key="7">
+                  7
+                  <span class="braille-dot" aria-hidden="true">⠶</span>
+                </button>
+                <button type="button" class="numeros" data-key="8">
+                  8
+                  <span class="braille-dot" aria-hidden="true">⠦</span>
+                </button>
+                <button type="button" class="numeros" data-key="9">
+                  9
+                  <span class="braille-dot" aria-hidden="true">⠔</span>
+                </button>
+              </div>
+
+              <!-- Row 4 -->
+              <div class="zero">
+                <button type="button" class="numeros" data-key="0">
+                  0
+                  <span class="braille-dot" aria-hidden="true">⠴</span>
+                </button>
+              </div>
+
+            </div>
+
+            <!-- Special actions bottom row -->
+            <div class="botoes-especiais">
+              <button type="button" class="branco">BRANCO</button>
+              <button type="button" class="corrige">CORRIGE</button>
+              <button type="button" class="confirma">CONFIRMA</button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
     </div>
 
-    <div class="fundo-urna">
-      <div class="linha-numeros">
-        <div class="numeros">1</div>
-        <div class="numeros">2</div>
-        <div class="numeros">3</div>
-      </div>
-
-      <div class="linha-numeros">
-        <div class="numeros">4</div>
-        <div class="numeros">5</div>
-        <div class="numeros">6</div>
-      </div>
-
-      <div class="linha-numeros">
-        <div class="numeros">7</div>
-        <div class="numeros">8</div>
-        <div class="numeros">9</div>
-      </div>
-    <div class="zero">
-      <div class="numeros">0</div>
+    <!-- Elegant designer footer / Institutional attribution -->
+    <div class="quem-sou">
+      Planejado com 🧠 e executado com <span class="coracao">❤️</span> por
+      <a href="https://beacons.ai/Tarsoo_Paulo" target="_blank" class="link">Paulo de Tarso</a>
     </div>
-      <div class="botoes-especiais">
-        <div class="branco">Branco</div>
-        <div class="corrige">Corrige</div>
-        <div class="confirma">Confirma</div>
-      </div>
-    </div>
+
   </div>
-
-  <div class="quem-sou">Planejado com 🧠 e executado com <span class="coracao">❤️</span> por
-    <a href="https://beacons.ai/Tarsoo_Paulo" target="_blank" class="link">
-      Paulo de Tarso</a>
-    </div>
 
   <script src="./assets/js/bundle.js"></script>
 </body>

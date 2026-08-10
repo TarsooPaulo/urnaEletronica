@@ -8,7 +8,7 @@ export const adicionaTela = (el) => {
   if (pisca) {
     pisca = document.querySelector('.pisca');
     pisca.innerText += el.innerText;
-    if (pisca.nextElementSibling.classList.contains('digitos-tela')) {
+    if (pisca.nextElementSibling && pisca.nextElementSibling.classList.contains('digitos-tela')) {
       pisca.nextElementSibling.classList.add('pisca');
       pisca.classList.remove('pisca');
     }
