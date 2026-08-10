@@ -4,8 +4,8 @@ const digito = document.querySelector('.digitos-tela');
 const digitos = document.querySelectorAll('.digitos-tela');
 
 export const cliqueDigito = (event) => {
-  const el = event.target;
-  if (el.classList.contains('numeros')) {
+  const el = event.target.closest('.numeros');
+  if (el) {
     const somNumeros = new Audio();
     somNumeros.src = '../../audios/numeros.mp3';
     somNumeros.play();
