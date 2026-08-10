@@ -6,14 +6,15 @@ export let pisca = document.querySelector('.pisca');
 
 export const adicionaTela = (el) => {
   if (pisca) {
+    const key = el.getAttribute('data-key');
     pisca = document.querySelector('.pisca');
-    pisca.innerText += el.innerText;
-    if (pisca.nextElementSibling && pisca.nextElementSibling.classList.contains('digitos-tela')) {
+    pisca.innerText += key;
+    if (pisca.nextElementSibling?.classList.contains('digitos-tela')) {
       pisca.nextElementSibling.classList.add('pisca');
       pisca.classList.remove('pisca');
     }
     pisca = document.querySelector('.pisca');
-    votos.push(el.innerText);
+    votos.push(key);
 
     if (votos.length === 5) {
       checaVoto();
