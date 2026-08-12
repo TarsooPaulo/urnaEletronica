@@ -35,6 +35,7 @@ export const adicionaBranco = () => {
   branco_candidatoInfo.classList.remove('aparece-candidato-info');
   branco_candidatoInfo.classList.add('candidato-info');
   branco_votoNulo.classList.add('voto-nulo');
+  branco_votoNulo.classList.remove('aparece-nulo');
   // votoBranco.classList.remove("voto-branco");
   // votoBranco.classList.add("aparece-branco");
 
