@@ -329,6 +329,9 @@ body {
 }
 
 .campo-foto {
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 85px;
   height: 110px;
   border: 2px solid #1a1d1a;
@@ -374,7 +377,7 @@ body {
   display: none; /* Hidden by default */
 }
 
-.voto-nulo.aparece-nulo {
+.aparece-nulo {
   position: absolute;
   top: 50px;
   left: 0;
@@ -384,6 +387,12 @@ body {
   align-items: center;
   gap: 4px;
   animation: fadeIn 0.15s ease-out;
+}
+
+/* Hide number input section when blank or null vote is active to prevent any overlap and center the messages */
+.panel-left:has(.aparece-branco:not(.hidden)) .number-input-section,
+.panel-left:has(.aparece-nulo) .number-input-section {
+  display: none !important;
 }
 
 .voto-nulo-texto {
